@@ -1,15 +1,16 @@
-class Table {
+class Table {//Table类
 public:
-
-  void show();
-  int addRow();
-  void delRow(int n);
-  int addColumn();
-  void delColumn(int n);
+  void show(){
+    cout<< ;
+  }
+  int addRow();//增加行
+  void delRow(int n);//删除行
+  int addColumn();//增加列
+  void delColumn(int n);//删除列
 private:
   Cell cells;
 };
-class Cell {
+class Cell {//Cell类
 public:
   Cell(char con[]);
   ~Cell();
@@ -19,7 +20,8 @@ private:
   string content;
 }
 int main() {
-  Table tb;
+  Table tb;//Table一个变量tb
+  //进行以下操作
   tb.show();
   tb.addRow();
   tb.show();
